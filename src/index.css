@@ -8,9 +8,15 @@
  --bg:#ececec; 
  --red:#db3a3a;
  --white:#f0f8ff;
+ --gray:#6c6c6c;
 }
 
 body{
 font-family: 'Lato', sans-serif;
 background-color: var(--bg);
+}
+.App{
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
 }
