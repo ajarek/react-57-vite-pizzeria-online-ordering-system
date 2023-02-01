@@ -1,0 +1,28 @@
+[
+	{
+		"id": 0,
+		"type": "pizza",
+    "name":  "Margherita",
+    "src":"public/pizza/margherita.jpeg",
+    "ingredients":"Cheese, tomato & basil with tomato base",
+    "price":11.90
+	},
+  {
+		"id": 1,
+		"type": "pizza",
+    "name":  "Pepperoni",
+    "src":"public/pizza/pepperoni.png",
+    "ingredients":"Loaded with pepperonis and cheese on a tomato base",
+    "price":12.90
+	},
+  {
+		"id": 2,
+		"type": "pizza",
+    "name":  "Chicken",
+    "src":"public/pizza/chicken.png",
+    "ingredients":"Seasoned chicken, corn, mushrooms and capsicum",
+    "price":14.90
+	}
+	
+	
+]
