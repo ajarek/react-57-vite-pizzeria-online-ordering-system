@@ -12,9 +12,10 @@ const Navigation = () => {
 
       </ul>
       <ul className='second-list'>
-        <li><a href="">Pizzas</a></li>
-        <li><a href="">ComboDeals</a></li>
-        <li><a href="">Sides</a></li>
+        <li><a href="#pizza">Pizzas</a></li>
+        <li><a href="#pasta">Pasta</a></li>
+        <li><a href="#combo">ComboDeals</a></li>
+        <li><a href="#sides">Sides</a></li>
         <li><a href="">New Menu</a></li>
 
       </ul>

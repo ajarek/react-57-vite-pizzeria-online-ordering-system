@@ -1,9 +1,12 @@
-.pizza-section{
+.dish-section{
   width: 100%;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
-
+  padding:  1rem;
+}
+.type-dish{
+  padding: 1rem;
 }
 .menu-btn{
   margin: 1rem auto;
@@ -23,4 +26,38 @@ transition: all 0.3s ease-in-out;
 .menu-btn button:hover{
   background-color: #db3a3a;
   color:#f0f8ff ;
+}
+.dish-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+  gap: 1rem;
+}
+.card{
+ width: 360px; 
+ height: 140px;
+ box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #fff;
+ cursor: pointer;
+}
+.card-img{
+  height: 90%;
+  background-color: #fff;
+}
+.card-img img{
+  height: 100%;
+  object-fit: cover;
+}
+.card-info{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding:0 1rem ;
+}
+.card-info h3{
+  align-self:flex-end;
 }
