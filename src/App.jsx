@@ -1,5 +1,7 @@
 import Header from './components/Header/Header'
-import PizzaSection from './components/PizzaSection/PizzaSection'
+import MenuSection from './components/MenuSection/MenuSection'
+import InfoSection from './components/InfoSection/InfoSection'
+import Contact from './components/Contact/Contact'
 
 
 function App() {
@@ -7,7 +9,9 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <PizzaSection />
+      <MenuSection />
+      <InfoSection/>
+      <Contact />
      
     </div>
   )

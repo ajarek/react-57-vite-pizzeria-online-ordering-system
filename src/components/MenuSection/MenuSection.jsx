@@ -1,7 +1,7 @@
 import React from 'react'
 import data from '../../assets/data.json'
-import './PizzaSection.css'
-const PizzaSection = () => {
+import './MenuSection.css'
+const MenuSection = () => {
   console.log(data.pizza)
   return (
     <section className='dish-section'>
@@ -208,4 +208,4 @@ const PizzaSection = () => {
   )
 }
 
-export default PizzaSection
+export default MenuSection
