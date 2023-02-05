@@ -16,22 +16,14 @@ const Navigation = () => {
             Takeout Menu
           </a>
         </li>
+       
         <li>
           <a
-            className={activeLink === 'delivery' ? 'active-link' : 'nav-link'}
-            onClick={() => setActiveLink('delivery')}
-            href='#delivery'
+            className={activeLink === 'post' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('post')}
+            href='#post'
           >
-            Delivery Menu
-          </a>
-        </li>
-        <li>
-          <a
-            className={activeLink === 'qr' ? 'active-link' : 'nav-link'}
-            onClick={() => setActiveLink('qr')}
-            href='#'
-          >
-            QR Code Menu
+            Post
           </a>
         </li>
         <li>

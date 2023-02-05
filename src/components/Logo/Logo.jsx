@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaShoppingBag } from 'react-icons/fa';
 import { BsSearch } from 'react-icons/bs'
 import './Logo.css'
 const Logo = () => {
@@ -21,7 +22,7 @@ const Logo = () => {
         <button className='search'>
           <BsSearch />
         </button>
-        <button className='service'>Order Card</button>
+        <button className='service'><FaShoppingBag/> <span>$0.00</span></button>
       </div>
     </div>
   )

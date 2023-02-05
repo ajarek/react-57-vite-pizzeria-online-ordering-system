@@ -1,12 +1,25 @@
-import React from 'react'
+import React ,{useEffect, useState, useContext} from 'react'
+import { AppContext } from '../../App'
+import { GoBook } from 'react-icons/go';
 import data from '../../assets/data.json'
 import './MenuSection.css'
 const MenuSection = () => {
+ 
+  const {items, setItems} = useContext(AppContext)
   
+  const handleClick= (id)=>{
+    
+    const item = data.pizza.find(el => el.id ==id)
+    setItems(item)
+   
+  }
+  console.log(items)
+
+
   return (
     <section  id='pizza' className='dish-section'>
       <div  className='menu-btn'>
-        <button>Menu Restrictions</button>
+        <h2>Our Menu <span>1</span>  <GoBook/></h2>
       </div>
       <div  className='type-dish'>
         <h3>Pizzas</h3>
@@ -16,10 +29,13 @@ const MenuSection = () => {
         id='pasta'
       >
         {data.pizza.map((el) => {
+          const id=el.id
           return (
             <div
               key={el.id}
               className='card'
+              id={el.id}
+              onClick={()=>handleClick((id))}
             >
               <div className='card-img'>
                 <img
