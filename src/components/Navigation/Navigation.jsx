@@ -1,23 +1,113 @@
-import React from 'react'
-import'./Navigation.css'
+import React, { useEffect, useState } from 'react'
+import './Navigation.css'
 
 const Navigation = () => {
+  const [activeLink, setActiveLink] = useState('takeout')
+
   return (
     <nav className='nav'>
       <ul className='first-list'>
-        <li ><a style={{background:'#db3a3a',color:'#f0f8ff'}} href="">Takeout Menu</a></li>
-        <li><a href="">Delivery Menu</a></li>
-        <li><a href="">QR Code Menu</a></li>
-        <li><a href="">New Menu</a></li>
-
+        <li>
+          <a
+            className={activeLink === 'takeout' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('takeout')}
+            href='#'
+          >
+            Takeout Menu
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'delivery' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('delivery')}
+            href='#delivery'
+          >
+            Delivery Menu
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'qr' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('qr')}
+            href='#'
+          >
+            QR Code Menu
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'nev' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('nev')}
+            href='#'
+          >
+            New Menu
+          </a>
+        </li>
       </ul>
       <ul className='second-list'>
-        <li><a href="#pizza">Pizzas</a></li>
-        <li><a href="#pasta">Pasta</a></li>
-        <li><a href="#combo">ComboDeals</a></li>
-        <li><a href="#sides">Sides</a></li>
-        <li><a href="">New Menu</a></li>
-
+        <li>
+          <a
+            className={activeLink === 'pizzas' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('pizzas')}
+            href='#pizza'
+          >
+            Pizzas
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'pasta' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('pasta')}
+            href='#pasta'
+          >
+            Pasta
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'combo' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('combo')}
+            href='#combo'
+          >
+            ComboDeals
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'hot' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('hot')}
+            href='#hot'
+          >
+            Hot Drinks
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'drinks' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('drinks')}
+            href='#drinks'
+          >
+            Drinks
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'desserts' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('desserts')}
+            href='#desserts'
+          >
+            Desserts
+          </a>
+        </li>
+        <li>
+          <a
+            className={activeLink === 'sides' ? 'active-link' : 'nav-link'}
+            onClick={() => setActiveLink('sides')}
+            href='#sides'
+          >
+            Sides
+          </a>
+        </li>
       </ul>
     </nav>
   )

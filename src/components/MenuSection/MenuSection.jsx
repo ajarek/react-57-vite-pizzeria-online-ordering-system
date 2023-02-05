@@ -2,18 +2,18 @@ import React from 'react'
 import data from '../../assets/data.json'
 import './MenuSection.css'
 const MenuSection = () => {
-  console.log(data.pizza)
+  
   return (
-    <section className='dish-section'>
-      <div className='menu-btn'>
+    <section  id='pizza' className='dish-section'>
+      <div  className='menu-btn'>
         <button>Menu Restrictions</button>
       </div>
-      <div className='type-dish'>
+      <div  className='type-dish'>
         <h3>Pizzas</h3>
       </div>
       <div
         className='dish-list'
-        id='pizza'
+        id='pasta'
       >
         {data.pizza.map((el) => {
           return (
@@ -36,12 +36,12 @@ const MenuSection = () => {
           )
         })}
       </div>
-      <div className='type-dish'>
+      <div  className='type-dish'>
         <h3>Pasta</h3>
       </div>
       <div
         className='dish-list'
-        id='pasta'
+        id='combo'
       >
         {data.pasta.map((el) => {
           return (
@@ -64,12 +64,12 @@ const MenuSection = () => {
           )
         })}
       </div>
-      <div className='type-dish'>
+      <div  className='type-dish'>
         <h3>Combo Deals</h3>
       </div>
       <div
         className='dish-list'
-        id='combo'
+        id='hot'
       >
         {data.combo.map((el) => {
           return (
@@ -97,7 +97,8 @@ const MenuSection = () => {
       </div>
       <div
         className='dish-list'
-        id='hot'
+        
+        id='drinks'
       >
         {data.hotdrinks.map((el) => {
           return (
@@ -125,7 +126,8 @@ const MenuSection = () => {
       </div>
       <div
         className='dish-list'
-        id='drink'
+        
+        id='desserts'
       >
         {data.drinks.map((el) => {
           return (
@@ -148,12 +150,13 @@ const MenuSection = () => {
           )
         })}
       </div>
-      <div className='type-dish'>
+      <div  className='type-dish'>
         <h3>Desserts</h3>
       </div>
       <div
         className='dish-list'
-        id='desserts'
+        
+        id='sides'
       >
         {data.desserts.map((el) => {
           return (
@@ -176,12 +179,12 @@ const MenuSection = () => {
           )
         })}
       </div>
-      <div className='type-dish'>
+      <div  className='type-dish'>
         <h3>Sides</h3>
       </div>
       <div
         className='dish-list'
-        id='sides'
+        
       >
         {data.sides.map((el) => {
           return (
@@ -204,6 +207,7 @@ const MenuSection = () => {
           )
         })}
       </div>
+      
     </section>
   )
 }

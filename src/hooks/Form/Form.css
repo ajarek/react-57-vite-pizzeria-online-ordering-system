@@ -1,4 +1,6 @@
 .form {
+  position: absolute;
+  top: 20%;
   width: 50%;
   height: auto;
   display: flex;

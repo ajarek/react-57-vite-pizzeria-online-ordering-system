@@ -18,7 +18,7 @@ height: 7vh;
   align-items: center;
   list-style: none;
 }
-.first-list a,.second-list a{
+.nav-link{
   text-decoration: none;
   margin-right:1rem ;
   color: #6c6c6c;
@@ -26,7 +26,11 @@ height: 7vh;
   padding: 0.4rem 1rem;
   border-radius: 25px;
 }
-.first-list a:focus,.second-list a:focus{
-  color: #f0f8ff;
+.active-link{
+  margin-right:1rem ;
+  color: #fff;
   background-color:#db3a3a ;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 0.4rem 1rem;
 }
