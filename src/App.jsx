@@ -32,7 +32,11 @@ function App() {
         <InfoSection />
         <Contact />
         <Footer />
-        {openCart?<Cart/>:null}
+        {openCart?
+        <FullPageLayout>
+        <Cart/>
+        </FullPageLayout>
+        :null}
       </AppContext.Provider>
     </div>
   )
