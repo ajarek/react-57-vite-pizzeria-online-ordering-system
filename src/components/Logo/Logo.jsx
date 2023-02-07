@@ -1,8 +1,10 @@
-import React from 'react'
+import React ,{useEffect, useState, useContext} from 'react'
+import { AppContext } from '../../App'
 import { FaShoppingBag } from 'react-icons/fa';
 import { BsSearch } from 'react-icons/bs'
 import './Logo.css'
 const Logo = () => {
+  const {openCart,setOpenCart} = useContext(AppContext)
   return (
     <div className='wrapper-logo'>
       <div className='header-logo'>
@@ -22,7 +24,12 @@ const Logo = () => {
         <button className='search'>
           <BsSearch />
         </button>
-        <button className='service'><FaShoppingBag/> <span>$0.00</span></button>
+        <button
+         className={'service'}
+         onClick={()=>setOpenCart(!openCart)}
+         >
+          <FaShoppingBag/>
+          <span>$0.00</span></button>
       </div>
     </div>
   )

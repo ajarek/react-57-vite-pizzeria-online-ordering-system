@@ -44,3 +44,6 @@ font-weight: 600;
 .header-service .service{
   width: 160px;
 }
+.header-service .service span{
+margin-left: 0.5rem;
+}

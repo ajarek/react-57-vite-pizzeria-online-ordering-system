@@ -7,13 +7,36 @@ const MenuSection = () => {
  
   const {items, setItems} = useContext(AppContext)
   
-  const handleClick= (id)=>{
-    
+  const handleClick= (id)=>{   
     const item = data.pizza.find(el => el.id ==id)
-    setItems(item)
-   
+    setItems(item) 
   }
-  console.log(items)
+  const handleClickPasta= (id)=>{   
+    const item = data.pasta.find(el => el.id ==id)
+    setItems(item) 
+  }
+  const handleClickCombo= (id)=>{   
+    const item = data.combo.find(el => el.id ==id)
+    setItems(item) 
+  }
+  const handleClickHotDrinks= (id)=>{   
+    const item = data.hotdrinks.find(el => el.id ==id)
+    setItems(item) 
+  }
+  const handleClickDrinks= (id)=>{   
+    const item = data.drinks.find(el => el.id ==id)
+    setItems(item) 
+  }
+  const handleClickSides= (id)=>{   
+    const item = data.sides.find(el => el.id ==id)
+    setItems(item) 
+  }
+  
+  const handleClickDesserts= (id)=>{   
+    const item = data.desserts.find(el => el.id ==id)
+    setItems(item) 
+  }
+  
 
 
   return (
@@ -60,10 +83,12 @@ const MenuSection = () => {
         id='combo'
       >
         {data.pasta.map((el) => {
+           const id=el.id
           return (
             <div
               key={el.id}
               className='card'
+              onClick={()=>handleClickPasta((id))}
             >
               <div className='card-img'>
                 <img
@@ -88,10 +113,12 @@ const MenuSection = () => {
         id='hot'
       >
         {data.combo.map((el) => {
+           const id=el.id
           return (
             <div
               key={el.id}
               className='card'
+              onClick={()=>handleClickCombo((id))}
             >
               <div className='card-img'>
                 <img
@@ -117,10 +144,12 @@ const MenuSection = () => {
         id='drinks'
       >
         {data.hotdrinks.map((el) => {
+           const id=el.id
           return (
             <div
               key={el.id}
               className='card'
+              onClick={()=>handleClickHotDrinks((id))}
             >
               <div className='card-img'>
                 <img
@@ -146,10 +175,12 @@ const MenuSection = () => {
         id='desserts'
       >
         {data.drinks.map((el) => {
+           const id=el.id
           return (
             <div
               key={el.id}
               className='card'
+              onClick={()=>handleClickDrinks((id))}
             >
               <div className='card-img'>
                 <img
@@ -175,10 +206,12 @@ const MenuSection = () => {
         id='sides'
       >
         {data.desserts.map((el) => {
+           const id=el.id
           return (
             <div
               key={el.id}
               className='card'
+              onClick={()=>handleClickDesserts((id))}
             >
               <div className='card-img'>
                 <img
@@ -203,10 +236,12 @@ const MenuSection = () => {
         
       >
         {data.sides.map((el) => {
+           const id=el.id
           return (
             <div
               key={el.id}
               className='card'
+              onClick={()=>handleClickSides((id))}
             >
               <div className='card-img'>
                 <img
