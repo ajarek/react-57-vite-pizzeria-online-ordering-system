@@ -23,7 +23,7 @@ const Cart = () => {
       >
         <IoMdCloseCircle />
       </div>
-      <table class='table'>
+      <table className='table'>
         <thead>
           <tr>
             <th>Qty</th>

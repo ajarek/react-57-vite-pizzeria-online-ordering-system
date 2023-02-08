@@ -20,7 +20,7 @@ function App() {
   return (
     <div className='App'>
       <AppContext.Provider
-        value={{ items, setItems, count, setCount, valueAll,openCart,setOpenCart}}
+        value={{ items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart}}
       >
         {items ? (
           <FullPageLayout>
