@@ -6,7 +6,12 @@ import './PizzaId.css'
 
 const PizzaId = () => {
   const {items, setItems, count, setCount, valueAll,addToCart,setAddToCart} = useContext(AppContext)
-
+  const newItems = {
+    id:items.id,
+    name:items.name,
+    count:count,
+    finalPrice:items.price*count
+  }
   return (
     <div className='pizza-id'>
       <div className="img"><img src={items.src} alt={items.name} /></div>
@@ -21,7 +26,7 @@ const PizzaId = () => {
         <div className="operation-wrapper">
           <div className="counter"><Counter/></div>
           <div className="add-cart">
-            <button onClick={()=>{setAddToCart(true);setItems(null)}}>Add To Cart</button>
+            <button onClick={()=>{setAddToCart([...addToCart,newItems]);setItems(null);setCount(1)}}>Add To Cart</button>
             </div>
         </div>
     </div>

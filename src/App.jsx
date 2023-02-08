@@ -13,7 +13,7 @@ export const AppContext = createContext()
 function App() {
   const [items, setItems] = useState(null)
   const [count, setCount] = useState(1)
-  const[addToCart,setAddToCart]=useState(false)
+  const[addToCart,setAddToCart]=useState([])
   const[openCart,setOpenCart]=useState(false)
   const valueAll = count * items?.price || 0
 

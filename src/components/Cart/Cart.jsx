@@ -4,16 +4,9 @@ import { AppContext } from '../../App'
 import './Cart.css'
 const Cart = () => {
   const {
-    items,
-    setItems,
-    count,
-    setCount,
-    valueAll,
-    addToCart,
-    setAddToCart,
-    openCart,
-    setOpenCart,
+    items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart
   } = useContext(AppContext)
+  const priceCart=addToCart.map((item) =>item.finalPrice).reduce((a,b) =>a+b,0)
   return (
     <div className='cart'>
       <div className='title'>Cart</div>
@@ -34,20 +27,19 @@ const Cart = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>2</td>
-            <td>Pepperoni</td>
-            <td>$14.00</td>
+          {addToCart.map((item, index) =>{
+            return (
+          <tr key={item.id}>
+            <td>{item.count}</td>
+            <td>{item.name}</td>
+            <td>${(item.finalPrice).toFixed(2)}</td>
             <td><IoMdCloseCircle /></td>
           </tr>  
-          <tr>
-            <td>1</td>
-            <td>Margaritta</td>
-            <td>$12.00</td>
-            <td><IoMdCloseCircle /></td>
-          </tr>              
+         )
+        })}
         </tbody>
       </table>
+      <div className="total"><div>Total</div><div>${priceCart.toFixed(2)}</div></div>
     </div>
   )
 }

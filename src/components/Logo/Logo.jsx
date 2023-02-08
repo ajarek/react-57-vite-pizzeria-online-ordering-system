@@ -4,7 +4,8 @@ import { FaShoppingBag } from 'react-icons/fa';
 import { BsSearch } from 'react-icons/bs'
 import './Logo.css'
 const Logo = () => {
-  const {openCart,setOpenCart} = useContext(AppContext)
+  const { items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart} = useContext(AppContext)
+  const priceCart=addToCart.map((item) =>item.finalPrice).reduce((a,b) =>a+b,0)
   return (
     <div className='wrapper-logo'>
       <div className='header-logo'>
@@ -29,7 +30,7 @@ const Logo = () => {
          onClick={()=>setOpenCart(!openCart)}
          >
           <FaShoppingBag/>
-          <span>$0.00</span></button>
+          <span>${priceCart.toFixed(2)}</span></button>
       </div>
     </div>
   )
