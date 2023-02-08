@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  overflow-y: auto;
 }
 .cart .title{
  width: 100%;
@@ -30,8 +31,8 @@
   font-size: 2.5rem;
 }
 table {
-  border:6px solid #948473;
-  background-color: #FFE3C6;
+  border:6px solid transparent;
+ 
   width: 100%;
   text-align: center;
   
@@ -42,26 +43,30 @@ table td, table th {
 }
 table tbody td {
   font-size: 16px;
+  background-color: #ff6f65;
 }
 table thead {
-  background: #948473;
-  background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
-  background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
-  background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+  background: #a20013;
+ 
 }
 table thead th {
   font-size: 17px;
   font-weight: bold;
   color: #F0F0F0;
   text-align: center;
-  border-left: 2px solid #948473;
 }
 table thead th:first-child {
   border-left: none;
 }
+table tbody td:nth-child(2) {
+  text-align: left;
+  padding: 0  0 0 5px;
+}
+table tbody td:nth-child(3) {
+  text-align: right;
+}
 table tbody td:nth-child(4) {
-  color: red;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 .total{
@@ -85,7 +90,7 @@ table tbody td:nth-child(4) {
 .checkout button{
   width: 100%;
   height: 38px;
-  background-color:#04b218 ;
+  background-color:#db3a3a ;
   color: #fff;
   font-size: 1.2rem;
   border: none;

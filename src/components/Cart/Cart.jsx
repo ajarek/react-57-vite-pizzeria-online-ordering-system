@@ -7,6 +7,12 @@ const Cart = () => {
     items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart
   } = useContext(AppContext)
   const priceCart=addToCart.map((item) =>item.finalPrice).reduce((a,b) =>a+b,0)
+
+const deleteItem=(idItem)=>{
+ const actualAddToCart= addToCart.filter((item) => item.id!=String(idItem))
+ setAddToCart(actualAddToCart)
+}
+
   return (
     <div className='cart'>
       <div className='title'>Cart</div>
@@ -29,13 +35,14 @@ const Cart = () => {
           </tr>
         </thead>
         <tbody>
-          {addToCart.map((item, index) =>{
+          {addToCart.map((item) =>{
+           const idItem=item.id
             return (
           <tr key={item.id}>
             <td>{item.count}</td>
             <td>{item.name}</td>
-            <td>${(item.finalPrice).toFixed(2)}</td>
-            <td><IoMdCloseCircle /></td>
+            <td>{(item.finalPrice).toFixed(2)}$</td>
+            <td onClick={()=>deleteItem(idItem)}><IoMdCloseCircle /></td>
           </tr>  
          )
         })}

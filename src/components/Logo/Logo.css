@@ -25,14 +25,9 @@
 font-size: 1.5rem;
 font-weight: 600;
 }
-.header-service{
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header-service .search,.header-service .service{
-  width: 40px;
+
+.header-service .service{
+  width: 160px;
   height: 40px;
   background-color: #db3a3a;
   font-size: 1.2rem;
@@ -41,9 +36,7 @@ font-weight: 600;
   color: #f0f8ff;
   cursor: pointer;
 }
-.header-service .service{
-  width: 160px;
-}
+
 .header-service .service span{
 margin-left: 0.5rem;
 }

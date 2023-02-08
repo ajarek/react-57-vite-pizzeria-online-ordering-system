@@ -1,7 +1,6 @@
 import React ,{useEffect, useState, useContext} from 'react'
 import { AppContext } from '../../App'
 import { FaShoppingBag } from 'react-icons/fa';
-import { BsSearch } from 'react-icons/bs'
 import './Logo.css'
 const Logo = () => {
   const { items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart} = useContext(AppContext)
@@ -22,9 +21,7 @@ const Logo = () => {
         <h3> Pizzeria Paradise</h3>
       </div>
       <div className='header-service'>
-        <button className='search'>
-          <BsSearch />
-        </button>
+        
         <button
          className={'service'}
          onClick={()=>setOpenCart(!openCart)}

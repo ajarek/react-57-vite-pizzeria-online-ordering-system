@@ -12,6 +12,7 @@ const PizzaId = () => {
     count:count,
     finalPrice:items.price*count
   }
+  const isObjectExists = addToCart.some(obj => obj.id === newItems.id);
   return (
     <div className='pizza-id'>
       <div className="img"><img src={items.src} alt={items.name} /></div>
@@ -26,7 +27,7 @@ const PizzaId = () => {
         <div className="operation-wrapper">
           <div className="counter"><Counter/></div>
           <div className="add-cart">
-            <button onClick={()=>{setAddToCart([...addToCart,newItems]);setItems(null);setCount(1)}}>Add To Cart</button>
+            <button onClick={()=>{!isObjectExists?setAddToCart([...addToCart,newItems]):alert('już istnieje');setItems(null);setCount(1)}}>Add To Cart</button>
             </div>
         </div>
     </div>
