@@ -16,6 +16,8 @@ const Cart = () => {
       >
         <IoMdCloseCircle />
       </div>
+      {priceCart!=0?(
+        <>
       <table className='table'>
         <thead>
           <tr>
@@ -39,7 +41,12 @@ const Cart = () => {
         })}
         </tbody>
       </table>
+     
       <div className="total"><div>Total</div><div>${priceCart.toFixed(2)}</div></div>
+      <div className="checkout"><button>Proceed To Checkout</button></div>
+      </>
+       ):<div className='cart-alert'>Cart is empty.</div>
+      }
     </div>
   )
 }
