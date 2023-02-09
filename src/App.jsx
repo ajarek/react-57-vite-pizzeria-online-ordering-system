@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer'
 import FullPageLayout from './components/FullPageLayout/FullPageLayout'
 import PizzaId from './components/PizzaId/PizzaId'
 import Cart from './components/Cart/Cart'
-
+import Alert from './components/Alert/Alert'
 export const AppContext = createContext()
 
 function App() {
@@ -16,11 +16,12 @@ function App() {
   const[addToCart,setAddToCart]=useState([])
   const[openCart,setOpenCart]=useState(false)
   const valueAll = count * items?.price || 0
+  const[ message,setMessage]=useState(false)
 
   return (
     <div className='App'>
       <AppContext.Provider
-        value={{ items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart}}
+        value={{ items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart,message,setMessage}}
       >
         {items ? (
           <FullPageLayout>
@@ -37,6 +38,11 @@ function App() {
         <Cart/>
         </FullPageLayout>
         :null}
+        {message ? 
+        <FullPageLayout>
+        <Alert textAlert={'The assortment is already in the cart!'}/>
+        </FullPageLayout>
+       :null}
       </AppContext.Provider>
     </div>
   )

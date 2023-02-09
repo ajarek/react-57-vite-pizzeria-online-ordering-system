@@ -153,14 +153,14 @@
       "price": 4.5
     },
     {
-      "id": 1,
+      "id": 61,
       "name": "Mint Chocolate Gelato",
       "src": "public/pizza/mint-chocolate.png",
       "ingredients": "According to the recipe",
       "price": 4.0
     },
     {
-      "id": 2,
+      "id": 62,
       "name": "Cheese Cookie",
       "src": "public/pizza/cheesecake.png",
       "ingredients": "According to the recipe",

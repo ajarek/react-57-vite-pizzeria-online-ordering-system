@@ -44,6 +44,7 @@ table td, table th {
 table tbody td {
   font-size: 16px;
   background-color: #ff6f65;
+  transition: all 0.4s ease-in-out;
 }
 table thead {
   background: #a20013;
@@ -68,6 +69,11 @@ table tbody td:nth-child(3) {
 table tbody td:nth-child(4) {
   font-size: 1.4rem;
   cursor: pointer;
+  padding-top: 0.5rem;
+}
+table tbody td:nth-child(4):hover {
+  background-color: #03bd19;
+  color: #fff;
 }
 .total{
   width: 100%;

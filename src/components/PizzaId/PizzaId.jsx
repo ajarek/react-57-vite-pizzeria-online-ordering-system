@@ -1,11 +1,12 @@
 import React ,{useEffect, useState, useContext} from 'react'
 import { AppContext } from '../../App'
+
 import { IoMdCloseCircle } from 'react-icons/io';
 import Counter from '../../components/Counter/Counter'
 import './PizzaId.css'
 
 const PizzaId = () => {
-  const {items, setItems, count, setCount, valueAll,addToCart,setAddToCart} = useContext(AppContext)
+  const {items, setItems, count, setCount, valueAll,addToCart,setAddToCart,message,setMessage} = useContext(AppContext)
   const newItems = {
     id:items.id,
     name:items.name,
@@ -27,7 +28,7 @@ const PizzaId = () => {
         <div className="operation-wrapper">
           <div className="counter"><Counter/></div>
           <div className="add-cart">
-            <button onClick={()=>{!isObjectExists?setAddToCart([...addToCart,newItems]):alert('już istnieje');setItems(null);setCount(1)}}>Add To Cart</button>
+            <button onClick={()=>{!isObjectExists?setAddToCart([...addToCart,newItems]):setMessage(true);setItems(null);setCount(1)}}>Add To Cart</button>
             </div>
         </div>
     </div>

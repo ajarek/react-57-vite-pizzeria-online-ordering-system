@@ -30,7 +30,7 @@ const deleteItem=(idItem)=>{
             <th>Qty</th>
             <th>Item</th>
             <th>Price</th>
-            <th>Operation</th>
+            <th>Remove</th>
 
           </tr>
         </thead>
