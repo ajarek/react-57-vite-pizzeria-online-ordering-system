@@ -1,9 +1,12 @@
-import React from 'react'
+import React ,{useEffect, useState, useContext} from 'react'
+import { AppContext } from '../../App'
 import { FaUser,FaClock,FaMapMarkerAlt } from 'react-icons/fa'
 import InfoPanel from '../../components/InfoPanel/InfoPanel'
 import './InfoSection.css'
 
 const InfoSection = () => {
+  
+  const {location,setLocation} = useContext(AppContext)
   return (
     <div className='info-section'>
       <InfoPanel
@@ -11,7 +14,7 @@ const InfoSection = () => {
       titlePanel={'Services'}
       >
       <li>Pickup</li>
-      <li>Pickup</li>
+      <li>Delivery</li>
       <li>Dine-In</li>
       <li>Table Booking</li>
       </InfoPanel>
@@ -39,11 +42,13 @@ Closed</option>
       >
        <li>78-100 Kolobrzeg Wielkopolska 2a</li> 
        <li className='country'><div>Poland</div></li>
-        <div className="wrapper-btn"><button>View Map</button></div>
+        <div className="wrapper-btn">
+          <button onClick={()=>setLocation(true)}>View Map</button>
+        </div>
         <div className="wrapper-btn">
         <h4>Phone</h4>
         </div>
-        <li className='country'><div>+48 573 297 230</div></li>
+        <li className='country'><div><a href="tel:+48573219230">+48 573219230</a></div></li>
       </InfoPanel>
 
     </div>
