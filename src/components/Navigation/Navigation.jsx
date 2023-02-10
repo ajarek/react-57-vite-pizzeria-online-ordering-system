@@ -30,9 +30,9 @@ const Navigation = () => {
           <a
             className={activeLink === 'nev' ? 'active-link' : 'nav-link'}
             onClick={() => setActiveLink('nev')}
-            href='#'
+            href='#contact'
           >
-            New Menu
+            Contact
           </a>
         </li>
       </ul>

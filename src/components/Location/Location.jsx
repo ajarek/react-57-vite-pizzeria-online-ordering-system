@@ -3,7 +3,7 @@ import { AppContext } from '../../App'
 import { IoMdCloseCircle } from 'react-icons/io'
 import './Location.css'
 const Location = () => {
-  const {location,setLocation} = useContext(AppContext)
+  const {setLocation} = useContext(AppContext)
 
   return (
     <div className='location'>

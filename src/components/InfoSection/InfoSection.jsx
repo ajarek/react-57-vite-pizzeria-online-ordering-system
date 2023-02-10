@@ -8,7 +8,7 @@ const InfoSection = () => {
   
   const {location,setLocation} = useContext(AppContext)
   return (
-    <div className='info-section'>
+    <div className='info-section' id='contact'>
       <InfoPanel
       iconPanel={<FaUser/>}
       titlePanel={'Services'}
