@@ -9,6 +9,7 @@ import PizzaId from './components/PizzaId/PizzaId'
 import Cart from './components/Cart/Cart'
 import Alert from './components/Alert/Alert'
 import Location from './components/Location/Location'
+import Payments  from './components/Payments/Payments'
 export const AppContext = createContext()
 
 function App() {
@@ -19,11 +20,13 @@ function App() {
   const valueAll = count * items?.price || 0
   const[ message,setMessage]=useState(false)
   const [location,setLocation]=useState(false)
+  const [openPayments,setOpenPayments]=useState(false)
+
 
   return (
     <div className='App'>
       <AppContext.Provider
-        value={{ items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart,message,setMessage, location, setLocation}}
+        value={{ items, setItems, count, setCount, valueAll, openCart, setOpenCart, addToCart,setAddToCart, message, setMessage, location, setLocation, openPayments, setOpenPayments}}
       >
         {items ? (
           <FullPageLayout>
@@ -48,6 +51,11 @@ function App() {
         {location ? 
         <FullPageLayout>
         <Location/>
+        </FullPageLayout>
+       :null}
+       {openPayments ? 
+        <FullPageLayout>
+        <Payments />
         </FullPageLayout>
        :null}
       </AppContext.Provider>

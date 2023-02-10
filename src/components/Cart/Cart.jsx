@@ -4,7 +4,7 @@ import { AppContext } from '../../App'
 import './Cart.css'
 const Cart = () => {
   const {
-    items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart
+    items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart, openPayments,setOpenPayments
   } = useContext(AppContext)
   const priceCart=addToCart.map((item) =>item.finalPrice).reduce((a,b) =>a+b,0)
 
@@ -50,7 +50,13 @@ const deleteItem=(idItem)=>{
       </table>
      
       <div className="total"><div>Total</div><div>${priceCart.toFixed(2)}</div></div>
-      <div className="checkout"><button>Proceed To Checkout</button></div>
+      <div className="checkout">
+        <button
+        onClick={()=>{setOpenPayments(true);setOpenCart(false)}}
+        >
+          Proceed To Checkout
+        </button>
+        </div>
       </>
        ):<div className='cart-alert'>Cart is empty.</div>
       }
