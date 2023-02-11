@@ -11,6 +11,8 @@ import Alert from './components/Alert/Alert'
 import AlertMessage from './components/AlertMessage/AlertMessage'
 import Location from './components/Location/Location'
 import Payments  from './components/Payments/Payments'
+import Summary  from './components/Summary/Summary'
+
 export const AppContext = createContext()
 
 function App() {
@@ -23,12 +25,13 @@ function App() {
   const[ sendMessage,setSendMessage]=useState(false)
   const [location,setLocation]=useState(false)
   const [openPayments,setOpenPayments]=useState(false)
+  const [summary,setSummary]=useState(false)
+  const [dataUser,setDataUser]=useState(null)
 
- console.log(sendMessage);
   return (
     <div className='App'>
       <AppContext.Provider
-        value={{ items, setItems, count, setCount, valueAll, openCart, setOpenCart, addToCart,setAddToCart, message, setMessage, location, setLocation, openPayments, setOpenPayments, sendMessage, setSendMessage}}
+        value={{ items, setItems, count, setCount, valueAll, openCart, setOpenCart, addToCart,setAddToCart, message, setMessage, location, setLocation, openPayments, setOpenPayments, sendMessage, setSendMessage, summary, setSummary, dataUser,setDataUser}}
       >
         {items ? (
           <FullPageLayout>
@@ -43,6 +46,11 @@ function App() {
         {openCart?
         <FullPageLayout>
         <Cart/>
+        </FullPageLayout>
+        :null}
+        {summary?
+        <FullPageLayout>
+        <Summary/>
         </FullPageLayout>
         :null}
         {message ? 

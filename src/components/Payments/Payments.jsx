@@ -4,13 +4,13 @@ import { IoMdCloseCircle } from 'react-icons/io'
 import { AppContext } from '../../App'
 import './Payments.css'
 const Payments = () => {
-  const {
-    items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart,openPayments,setOpenPayments} = useContext(AppContext)
+  const {items,setOpenCart, addToCart,setAddToCart,setOpenPayments,summary,setSummary,dataUser,setDataUser} = useContext(AppContext)
   const priceCart=addToCart.map((item) =>item.finalPrice).reduce((a,b) =>a+b,0)
   const onSubmit = (data) => {
-    console.log(data);
+    setDataUser(data);
+    setSummary(true)
     setOpenPayments(false)
-    setAddToCart([])
+    
   };
 
 

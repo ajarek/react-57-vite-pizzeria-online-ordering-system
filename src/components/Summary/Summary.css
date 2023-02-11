@@ -1,0 +1,51 @@
+.summary{
+  width: 400px;
+  min-height: 80vh; 
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow-y: auto;
+}
+.summary .title{
+ width: 100%;
+ height: 50px;
+ display: flex;
+ align-items: center;
+ padding: 0 1rem;
+ font-size: 1.2rem;
+ font-weight: 600;
+ background-color:#f7f7f7 ;
+}
+.summary .close{
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.summary .close:hover{
+  font-size: 2.5rem;
+}
+.summary .wrapper{
+  width: 100%;
+  padding:0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.summary .thank-you,.summary .address,.summary .payment,.summary .info{
+ padding:0 1rem ;
+ margin-bottom: 1.2rem;
+ font-size: 1.1rem;
+ text-align: left;
+}
+.summary span{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+payment,.summary .info span{
+  font-size: 2rem;
+}
