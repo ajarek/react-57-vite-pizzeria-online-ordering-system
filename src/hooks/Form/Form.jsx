@@ -1,9 +1,10 @@
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import './Form.css'
 
-export const Form = () => {
+export const Form = ({onSubmit}) => {
   const schema = yup.object().shape({
     name: yup.string().required("Your Full Name is Required!"),
     email: yup.string().email().required(),
@@ -15,14 +16,23 @@ export const Form = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState,
+    formState: { errors,isSubmitSuccessful },
   } = useForm({
     resolver: yupResolver(schema),
   });
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset({
+        name: '',
+        email: '',
+        phone: '',
+        text: '',
+      })
+    }
+  }, [formState, reset])
 
-  const onSubmit = (data) => {
-    console.log(data);
-  };
 
   return (
     <form className="form" onSubmit={handleSubmit(onSubmit)}>

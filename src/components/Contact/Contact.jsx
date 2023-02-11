@@ -1,12 +1,18 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { AppContext } from '../../App'
 import{ Form} from '../../hooks/Form/Form'
 import './Contact.css'
 
 const Contact = () => {
+  const {sendMessage,setSendMessage} = useContext(AppContext)
+  const onSubmit = (data) => {
+    setSendMessage(true)
+  };
   return (
     <div className='contact' id='post' >
-      <h2>Contact Us</h2>
-      <Form/>
+      <Form
+      onSubmit={onSubmit}
+      />
     </div>
   )
 }
