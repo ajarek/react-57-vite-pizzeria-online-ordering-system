@@ -34,3 +34,11 @@
 .header-h3{
   font-size: 1.5rem;
 }
+@media (max-width:760px) {
+  .wrapper-header{
+    
+    
+    top: 25vh;
+    
+  }
+}

@@ -1,7 +1,7 @@
 
 .nav{
 width: 100%;
-height: 14vh;
+height: 15vh;
 max-width: 1440px;
   position: fixed;
 background-color:#fff ;
@@ -13,7 +13,7 @@ z-index: 3;
 }
 .first-list,.second-list{
   width: 100%;
-height: 7vh;
+height: 10vh;
   display: flex;
   align-items: center;
   list-style: none;
@@ -69,10 +69,12 @@ height: 7vh;
     align-items: flex-start;
     transition:transform 0.5s ease-in-out;
     z-index: 1;
-   
     color: black;
   }
   .navbar-none{
     transform: translateX(-50vw);
+  }
+  .active-link{
+    padding:0.2rem 0.5rem; ;
   }
 }

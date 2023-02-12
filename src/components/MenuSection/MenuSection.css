@@ -3,7 +3,8 @@
   min-height: 60vh;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+
+  padding: 1rem 0; 
 }
 .type-dish{
   padding: 1rem;
@@ -27,8 +28,8 @@
   gap: 1rem;
 }
 .card{
- width: 360px; 
- height: 140px;
+ width: 320px; 
+ height: 170px;
  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
  display: flex;
  align-items: center;
@@ -37,7 +38,7 @@
  cursor: pointer;
 }
 .card-img{
-  height: 90%;
+  height: 60%;
   background-color: #fff;
 }
 .card-img img{
@@ -53,4 +54,15 @@
 }
 .card-info h3{
   align-self:flex-end;
+}
+@media (max-width: 1135px) {
+  .dish-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:800px) {
+  .dish-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
