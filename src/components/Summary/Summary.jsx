@@ -15,9 +15,9 @@ const Summary = () => {
       >
         <IoMdCloseCircle />
     </div>
-    <div className="thank-you"><br /><span style={{textAlign:'center'}}>{dataUser.name}!<br/><br/></span> We appreciate you placing your order!</div>
-    <div className="address">It will be delivered to the following address: <br/><br/> <span>{dataUser.address}</span> </div>
-    <div className="payment">To pay: <span>${priceCart.toFixed(2)}</span><br/> Payment method: <span>{dataUser.radio}</span> </div>
+    <div className="thank-you"><span style={{textAlign:'center'}}>{dataUser.name}!</span> We appreciate you placing your order!</div>
+    <div className="address">It will be delivered to the following address:<span>{dataUser.address}</span> </div>
+    <div className="payment">To pay: <span>${priceCart.toFixed(2)}</span> Payment method: <span>{dataUser.radio}</span> </div>
 
     {addToCart.map(el=>{
       return(
@@ -27,7 +27,7 @@ const Summary = () => {
         </div>
       )
     })}
-     <div className="info">Your order will be shipped once it is ready <span>🚗</span></div>
+     <div className="info">Your order will be shipped once it is ready <span>🚗...</span></div>
     </div>
   )
 }

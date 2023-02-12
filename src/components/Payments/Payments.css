@@ -30,3 +30,9 @@
 .payments .close:hover{
   font-size: 2.5rem;
 }
+@media (max-width:435px) {
+  .payments{
+    width: 320px;
+  }
+  
+}

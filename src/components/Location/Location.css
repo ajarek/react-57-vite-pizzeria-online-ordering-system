@@ -16,3 +16,7 @@
 .location .close:hover{
   font-size: 2.5rem;
 }
+@media (max-width:435px) {
+  .location{
+    width: 320px;
+  }

@@ -116,3 +116,9 @@ table tbody td:nth-child(4):hover {
   color: #db3a3a;
   
 }
+@media (max-width:435px) {
+  .cart{
+    width: 320px;
+  }
+  
+}

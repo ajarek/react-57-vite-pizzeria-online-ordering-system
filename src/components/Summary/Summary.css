@@ -37,10 +37,14 @@
   justify-content: space-between;
 }
 .summary .thank-you,.summary .address,.summary .payment,.summary .info{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
  padding:0 1rem ;
- margin-bottom: 1.2rem;
+ margin-bottom: 1rem;
  font-size: 1.1rem;
- text-align: left;
 }
 .summary span{
   font-size: 1.2rem;
@@ -48,4 +52,10 @@
 }
 payment,.summary .info span{
   font-size: 2rem;
+}
+@media (max-width:425px) {
+  .summary{
+    width: 320px;
+  }
+  
 }
