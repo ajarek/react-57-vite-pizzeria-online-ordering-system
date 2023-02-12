@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import Hamburger from 'hamburger-react'
 import './Navigation.css'
 
 const Navigation = () => {
   const [activeLink, setActiveLink] = useState('takeout')
-
+  const [isOpen, setOpen] = useState(false)
   return (
-    <nav className='nav'>
+    <>
+    <nav className={isOpen ? 'nav' : 'nav navbar-none'}>
       <ul className='first-list'>
         <li>
           <a
@@ -101,7 +103,28 @@ const Navigation = () => {
           </a>
         </li>
       </ul>
+     
     </nav>
+     <div className='hamburger'>
+     <Hamburger
+       size={30}
+       duration={0.3}
+       distance='md'
+       color={isOpen ? '#f15e50' : '#808080'}
+       easing='ease-in'
+       rounded
+       label='Show menu'
+       onToggle={(toggled) => {
+         setOpen(true)
+         if (toggled) {
+           // open a menu
+         } else {
+           setOpen(false)
+         }
+       }}
+     />
+   </div>
+   </>
   )
 }
 

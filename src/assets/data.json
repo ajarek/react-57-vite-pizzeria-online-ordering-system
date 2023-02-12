@@ -103,21 +103,21 @@
       "id": 40,
       "name": "Coca Cola",
       "src": "public/pizza/cola.png",
-      "ingredients": "According to the recipe",
+      "ingredients": "A regular Coca-cola drink",
       "price": 3.0
     },
     {
       "id": 41,
       "name": "Coca Cola Zero",
       "src": "public/pizza/cola-zero.png",
-      "ingredients": "According to the recipe",
+      "ingredients": "A Coca-cola drink without any sugar",
       "price": 3.0
     },
     {
       "id": 42,
       "name": "Fanta",
       "src": "public/pizza/fanta.png",
-      "ingredients": "According to the recipe",
+      "ingredients": "A drink of Fanta",
       "price": 3.0
     }
   ],
@@ -126,21 +126,21 @@
       "id": 50,
       "name": "Garlic Bread",
       "src": "public/pizza/garlic-bread.png",
-      "ingredients": "According to the recipe",
+      "ingredients": "A couple of Garlic Bread sandwiches",
       "price": 4.5
     },
     {
       "id": 51,
       "name": "Fries",
       "src": "public/pizza/fries.png",
-      "ingredients": "According to the recipe",
+      "ingredients": "A bowl of salty fries",
       "price": 4.0
     },
     {
       "id": 52,
       "name": "Fried Chicken",
       "src": "public/pizza/fried-chicken.png",
-      "ingredients": "According to the recipe",
+      "ingredients": "Deep-fried crisp chicken",
       "price": 7.0
     }
   ],
@@ -149,7 +149,7 @@
       "id": 60,
       "name": "Chocolate Brownie",
       "src": "public/pizza/brownie.png",
-      "ingredients": "Servce with vanilla ice cream and chocolate sauce",
+      "ingredients": "Served with vanilla ice cream and chocolate sauce",
       "price": 4.5
     },
     {
