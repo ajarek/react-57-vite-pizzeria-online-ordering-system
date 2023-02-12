@@ -1,59 +1,59 @@
-.dish-section{
+.dish-section {
   width: 100%;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
 
-  padding: 1rem 0; 
+  padding: 1rem 0;
 }
-.type-dish{
+.type-dish {
   padding: 1rem;
 }
-.menu-btn{
+.menu-btn {
   margin: 1rem auto;
   height: 50px;
 }
-.menu-btn h2{
+.menu-btn h2 {
   display: flex;
   align-items: flex-end;
 }
-.menu-btn span{
+.menu-btn span {
   opacity: 0;
 }
 
-.dish-list{
+.dish-list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   gap: 1rem;
 }
-.card{
- width: 320px; 
- height: 170px;
- box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
- display: flex;
- align-items: center;
- justify-content: center;
- background-color: #fff;
- cursor: pointer;
+.card {
+  width: 320px;
+  height: 170px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  cursor: pointer;
 }
-.card-img{
+.card-img {
   height: 60%;
   background-color: #fff;
 }
-.card-img img{
+.card-img img {
   height: 100%;
   object-fit: cover;
 }
-.card-info{
+.card-info {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding:0 1rem ;
+  padding: 0 1rem;
 }
-.card-info h3{
-  align-self:flex-end;
+.card-info h3 {
+  align-self: flex-end;
 }
 @media (max-width: 1135px) {
   .dish-list {
@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .dish-list {
     grid-template-columns: repeat(1, 1fr);
   }

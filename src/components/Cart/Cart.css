@@ -1,6 +1,6 @@
-.cart{
+.cart {
   width: 400px;
-  min-height: 70vh; 
+  min-height: 70vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -9,17 +9,17 @@
   position: relative;
   overflow-y: auto;
 }
-.cart .title{
- width: 100%;
- height: 50px;
- display: flex;
- align-items: center;
- padding: 0 1rem;
- font-size: 1.2rem;
- font-weight: 600;
- background-color:#f7f7f7 ;
+.cart .title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #f7f7f7;
 }
-.cart .close{
+.cart .close {
   font-size: 2rem;
   position: absolute;
   top: 0;
@@ -27,17 +27,17 @@
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.cart .close:hover{
+.cart .close:hover {
   font-size: 2.5rem;
 }
 table {
-  border:6px solid transparent;
- 
+  border: 6px solid transparent;
+
   width: 100%;
   text-align: center;
-  
 }
-table td, table th {
+table td,
+table th {
   border: 1px solid #948473;
   padding: 4px 4px;
 }
@@ -48,12 +48,11 @@ table tbody td {
 }
 table thead {
   background: #a20013;
- 
 }
 table thead th {
   font-size: 17px;
   font-weight: bold;
-  color: #F0F0F0;
+  color: #f0f0f0;
   text-align: center;
 }
 table thead th:first-child {
@@ -61,7 +60,7 @@ table thead th:first-child {
 }
 table tbody td:nth-child(2) {
   text-align: left;
-  padding: 0  0 0 5px;
+  padding: 0 0 0 5px;
 }
 table tbody td:nth-child(3) {
   text-align: right;
@@ -75,7 +74,7 @@ table tbody td:nth-child(4):hover {
   background-color: #03bd19;
   color: #fff;
 }
-.total{
+.total {
   width: 100%;
   height: 40px;
   display: flex;
@@ -83,20 +82,20 @@ table tbody td:nth-child(4):hover {
   align-items: center;
   padding: 2rem;
 }
-.total div{
+.total div {
   font-size: 1.2rem;
   font-weight: 600;
 }
-.checkout{
+.checkout {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 2rem;
 }
-.checkout button{
+.checkout button {
   width: 100%;
   height: 38px;
-  background-color:#db3a3a ;
+  background-color: #db3a3a;
   color: #fff;
   font-size: 1.2rem;
   border: none;
@@ -104,21 +103,19 @@ table tbody td:nth-child(4):hover {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-.checkout button:hover{
+.checkout button:hover {
   background-color: #03bd19;
-  font-size:1.3rem ;
+  font-size: 1.3rem;
 }
-.cart-alert{
+.cart-alert {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.3rem;
   color: #db3a3a;
-  
 }
-@media (max-width:435px) {
-  .cart{
+@media (max-width: 435px) {
+  .cart {
     width: 320px;
   }
-  
 }

@@ -1,35 +1,35 @@
-.info-panel{
+.info-panel {
   width: 320px;
   height: 500px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  background-color:#fff ;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding: 2rem;
 }
-.info-panel .icon{
- width: 50px;
- height: 50px;
- border-radius: 50%;
- background-color:#db3a3a ;
- color: #fff;
- display: flex;
- align-items: center;
- justify-content: center;
- font-size: 1.3rem;
- margin-bottom: 1rem;
+.info-panel .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #db3a3a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
-.info-panel .title h2{
+.info-panel .title h2 {
   margin-bottom: 1rem;
- font-weight: 400;
+  font-weight: 400;
 }
-.info-panel ul{
+.info-panel ul {
   width: 100%;
 }
-.info-panel li{
+.info-panel li {
   list-style: none;
   font-size: 1.1rem;
   margin-top: 0.5rem;
@@ -37,33 +37,33 @@
   display: flex;
   justify-content: space-between;
 }
-.info-panel li span{
-align-self: flex-end;
+.info-panel li span {
+  align-self: flex-end;
 }
-.info-panel .select-hours{
+.info-panel .select-hours {
   margin-top: 2rem;
   font-size: 1.1rem;
   border: none;
   outline: none;
 }
-.info-panel .select-hours option{
+.info-panel .select-hours option {
   padding: 0.5rem;
 }
-.info-panel .wrapper-btn{
+.info-panel .wrapper-btn {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.info-panel button{
-margin:1rem auto;
-padding: 0.5rem 1rem;
-align-self: center;
-font-size: 1rem;
-background-color: #db3a3a;
-color: #fff;
-border: none;
-cursor: pointer;
+.info-panel button {
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  font-size: 1rem;
+  background-color: #db3a3a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
-.country div{
+.country div {
   margin: 0 auto;
 }

@@ -1,10 +1,12 @@
-import React ,{useEffect, useState, useContext} from 'react'
+import React, { useContext } from 'react'
 import { AppContext } from '../../App'
-import { FaShoppingBag } from 'react-icons/fa';
+import { FaShoppingBag } from 'react-icons/fa'
 import './Logo.css'
 const Logo = () => {
-  const { items, setItems, count, setCount, valueAll,openCart,setOpenCart, addToCart,setAddToCart} = useContext(AppContext)
-  const priceCart=addToCart.map((item) =>item.finalPrice).reduce((a,b) =>a+b,0)
+  const { openCart, setOpenCart, addToCart } = useContext(AppContext)
+  const priceCart = addToCart
+    .map((item) => item.finalPrice)
+    .reduce((a, b) => a + b, 0)
   return (
     <div className='wrapper-logo'>
       <div className='header-logo'>
@@ -21,13 +23,13 @@ const Logo = () => {
         <h3> Pizzeria Paradise</h3>
       </div>
       <div className='header-service'>
-        
         <button
-         className={'service'}
-         onClick={()=>setOpenCart(!openCart)}
-         >
-          <FaShoppingBag/>
-          <span>${priceCart.toFixed(2)}</span></button>
+          className={'service'}
+          onClick={() => setOpenCart(!openCart)}
+        >
+          <FaShoppingBag />
+          <span>${priceCart.toFixed(2)}</span>
+        </button>
       </div>
     </div>
   )

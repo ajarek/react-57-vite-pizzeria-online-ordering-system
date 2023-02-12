@@ -1,6 +1,6 @@
-.payments{
+.payments {
   width: 400px;
-  min-height: 80vh; 
+  min-height: 80vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -9,17 +9,17 @@
   position: relative;
   overflow-y: auto;
 }
-.payments .title{
- width: 100%;
- height: 50px;
- display: flex;
- align-items: center;
- padding: 0 1rem;
- font-size: 1.2rem;
- font-weight: 600;
- background-color:#f7f7f7 ;
+.payments .title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #f7f7f7;
 }
-.payments .close{
+.payments .close {
   font-size: 2rem;
   position: absolute;
   top: 0;
@@ -27,12 +27,11 @@
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.payments .close:hover{
+.payments .close:hover {
   font-size: 2.5rem;
 }
-@media (max-width:435px) {
-  .payments{
+@media (max-width: 435px) {
+  .payments {
     width: 320px;
   }
-  
 }

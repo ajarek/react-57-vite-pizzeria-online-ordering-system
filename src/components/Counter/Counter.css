@@ -1,18 +1,18 @@
-.counter{
+.counter {
   display: flex;
   align-items: center;
 }
-.counter button,.counter .count{
+.counter button,
+.counter .count {
   width: 40px;
   height: 40px;
-  border: solid 1px rgba(0,0,0,0.3);
+  border: solid 1px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  
 }
-.counter .count{
- display: flex;
- align-items: center;
- justify-content: center;
- user-select: none;
- font-size: 1.2rem;
+.counter .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-size: 1.2rem;
 }

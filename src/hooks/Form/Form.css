@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   background-color: #fff;
   padding: 1rem;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .form input,
 .form textarea {
@@ -44,8 +44,8 @@
 .form p {
   color: red;
 }
-@media (max-width:590px) {
-  .form{
+@media (max-width: 590px) {
+  .form {
     width: 320px;
   }
 }

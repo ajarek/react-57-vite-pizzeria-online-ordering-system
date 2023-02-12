@@ -1,6 +1,6 @@
-.summary{
+.summary {
   width: 400px;
-  min-height: 80vh; 
+  min-height: 80vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -9,17 +9,17 @@
   position: relative;
   overflow-y: auto;
 }
-.summary .title{
- width: 100%;
- height: 50px;
- display: flex;
- align-items: center;
- padding: 0 1rem;
- font-size: 1.2rem;
- font-weight: 600;
- background-color:#f7f7f7 ;
+.summary .title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #f7f7f7;
 }
-.summary .close{
+.summary .close {
   font-size: 2rem;
   position: absolute;
   top: 0;
@@ -27,35 +27,38 @@
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.summary .close:hover{
+.summary .close:hover {
   font-size: 2.5rem;
 }
-.summary .wrapper{
+.summary .wrapper {
   width: 100%;
-  padding:0 1rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
 }
-.summary .thank-you,.summary .address,.summary .payment,.summary .info{
- width: 100%;
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
- align-items: flex-start;
- padding:0 1rem ;
- margin-bottom: 1rem;
- font-size: 1.1rem;
+.summary .thank-you,
+.summary .address,
+.summary .payment,
+.summary .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
-.summary span{
+.summary span {
   font-size: 1.2rem;
   font-weight: 600;
 }
-payment,.summary .info span{
+payment,
+.summary .info span {
   font-size: 2rem;
 }
-@media (max-width:425px) {
-  .summary{
+@media (max-width: 425px) {
+  .summary {
     width: 320px;
   }
-  
 }

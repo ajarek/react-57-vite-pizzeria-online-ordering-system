@@ -1,17 +1,8 @@
-import React from "react"
+import React from 'react'
 
-import classes from "./FullPageLayout.css"
+import './FullPageLayout.css'
 
-export const FullPageLayout = ({children}) => {
-  
-
-  return (
-    <div
-      className={'root'}
-      
-    >
-      {children}
-    </div>
-  )
+export const FullPageLayout = ({ children }) => {
+  return <div className={'root'}>{children}</div>
 }
 export default FullPageLayout
