@@ -3,42 +3,42 @@
     {
       "id": 0,
       "name": "Margherita",
-      "src": "/pizza/margherita.png",
+      "src": "./pizza/margherita.png",
       "ingredients": "Cheese, tomato & basil with tomato base",
       "price": 11.9
     },
     {
       "id": 1,
       "name": "Pepperoni",
-      "src": "/pizza/pepperoni.png",
+      "src": "./pizza/pepperoni.png",
       "ingredients": "Loaded with pepperonis and cheese on a tomato base",
       "price": 12.9
     },
     {
       "id": 2,
       "name": "Chicken",
-      "src": "/pizza/chicken.png",
+      "src": "./pizza/chicken.png",
       "ingredients": "Seasoned chicken, corn, mushrooms and capsicum",
       "price": 14.9
     },
     {
       "id": 3,
       "name": "Veggie",
-      "src": "/pizza/veggie.png",
+      "src": "./pizza/veggie.png",
       "ingredients": "Pepperoni, sausage, green bell pepper, black olives, and red onions",
       "price": 14.9
     },
     {
       "id": 4,
       "name": "California",
-      "src": "/pizza/california.png",
+      "src": "./pizza/california.png",
       "ingredients": "Processed 4 cheese, onion, mushrooms and capsicum, oregano",
       "price": 13.9
     },
     {
       "id": 5,
       "name": "New-York",
-      "src": "/pizza/new-york.png",
+      "src": "./pizza/new-york.png",
       "ingredients": " Mozzarella cheese, tomato sauce, and other toppings of your choice.",
       "price": 14.9
     }
