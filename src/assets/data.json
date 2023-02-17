@@ -47,21 +47,21 @@
     {
       "id": 10,
       "name": "Bolognese",
-      "src": "/pizza/pasta-bolognese.png",
+      "src": "./pizza/pasta-bolognese.png",
       "ingredients": "Cheese, tomato & basil with tomato base",
       "price": 29.95
     },
     {
       "id": 11,
       "name": "Carbonara",
-      "src": "/pizza/pasta-carbonara.png",
+      "src": "./pizza/pasta-carbonara.png",
       "ingredients": "Loaded with pepperonis and cheese on a tomato base",
       "price": 31.0
     },
     {
       "id": 12,
       "name": "Napoli",
-      "src": "/pizza/pasta-napoli.png",
+      "src": "./pizza/pasta-napoli.png",
       "ingredients": "Seasoned chicken, corn, mushrooms and capsicum",
       "price": 28.9
     }
@@ -70,7 +70,7 @@
     {
       "id": 20,
       "name": "2 Pizzas 1 Side",
-      "src": "/pizza/pizzas.png",
+      "src": "./pizza/pizzas.png",
       "ingredients": "Cheese, tomato & basil with tomato base & according to the recipe",
       "price": 29.95
     }
@@ -79,21 +79,21 @@
     {
       "id": 30,
       "name": "Flat White",
-      "src": "/pizza/flat-white.png",
+      "src": "./pizza/flat-white.png",
       "ingredients": "According to the recipe",
       "price": 4.5
     },
     {
       "id": 31,
       "name": "Mocha",
-      "src": "/pizza/mocha.png",
+      "src": "./pizza/mocha.png",
       "ingredients": "According to the recipe",
       "price": 5.0
     },
     {
       "id": 32,
       "name": "English Breakfast Tea",
-      "src": "/pizza/tea.png",
+      "src": "./pizza/tea.png",
       "ingredients": "According to the recipe",
       "price": 3.0
     }
@@ -102,21 +102,21 @@
     {
       "id": 40,
       "name": "Coca Cola",
-      "src": "/pizza/cola.png",
+      "src": "./pizza/cola.png",
       "ingredients": "A regular Coca-cola drink",
       "price": 3.0
     },
     {
       "id": 41,
       "name": "Coca Cola Zero",
-      "src": "/pizza/cola-zero.png",
+      "src": "./pizza/cola-zero.png",
       "ingredients": "A Coca-cola drink without any sugar",
       "price": 3.0
     },
     {
       "id": 42,
       "name": "Fanta",
-      "src": "/pizza/fanta.png",
+      "src": "./pizza/fanta.png",
       "ingredients": "A drink of Fanta",
       "price": 3.0
     }
@@ -125,21 +125,21 @@
     {
       "id": 50,
       "name": "Garlic Bread",
-      "src": "/pizza/garlic-bread.png",
+      "src": "./pizza/garlic-bread.png",
       "ingredients": "A couple of Garlic Bread sandwiches",
       "price": 4.5
     },
     {
       "id": 51,
       "name": "Fries",
-      "src": "/pizza/fries.png",
+      "src": "./pizza/fries.png",
       "ingredients": "A bowl of salty fries",
       "price": 4.0
     },
     {
       "id": 52,
       "name": "Fried Chicken",
-      "src": "/pizza/fried-chicken.png",
+      "src": "./pizza/fried-chicken.png",
       "ingredients": "Deep-fried crisp chicken",
       "price": 7.0
     }
@@ -148,21 +148,21 @@
     {
       "id": 60,
       "name": "Chocolate Brownie",
-      "src": "/pizza/brownie.png",
+      "src": "./pizza/brownie.png",
       "ingredients": "Served with vanilla ice cream and chocolate sauce",
       "price": 4.5
     },
     {
       "id": 61,
       "name": "Mint Chocolate Gelato",
-      "src": "/pizza/mint-chocolate.png",
+      "src": "./pizza/mint-chocolate.png",
       "ingredients": "According to the recipe",
       "price": 4.0
     },
     {
       "id": 62,
       "name": "Cheese Cookie",
-      "src": "/pizza/cheesecake.png",
+      "src": "./pizza/cheesecake.png",
       "ingredients": "According to the recipe",
       "price": 7.0
     }

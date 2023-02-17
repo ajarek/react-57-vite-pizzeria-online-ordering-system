@@ -15,7 +15,7 @@ const Logo = () => {
           target='_blank'
         >
           <img
-            src='/pizza/icon.png'
+            src='./pizza/icon.png'
             className='logo'
             alt='Vite logo'
           />
